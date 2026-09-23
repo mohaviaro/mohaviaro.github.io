@@ -4,7 +4,7 @@ A clean, minimalist, human-crafted personal CV and portfolio website for **Mohav
 
 Built with semantic HTML5, pure CSS, and minimal vanilla JavaScript. Fast, lightweight, and pre-configured for instant deployment on GitHub Pages.
 
-🔗 **Live Website**: [https://mohaviaro.github.io/cv/](https://mohaviaro.github.io/cv/)
+🔗 **Live Website**: [https://mohaviaro.github.io](https://mohaviaro.github.io)
 
 ---
 
@@ -53,4 +53,4 @@ cv/
 2. **Enable GitHub Pages**:
    - In GitHub repository: **Settings** &rarr; **Pages**
    - Under **Build and deployment** &gt; **Source**, select **GitHub Actions**.
-   - Your site will be live at: **`https://mohaviaro.github.io/cv/`**
+   - Your site will be live at: **`https://mohaviaro.github.io`**
