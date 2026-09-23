@@ -1,0 +1,205 @@
+\documentclass[10pt,a4paper]{article}
+
+\usepackage[top=1.2cm,bottom=1.2cm,left=1.5cm,right=1.5cm]{geometry}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage{tgheros}
+\renewcommand{\familydefault}{\sfdefault}
+\usepackage{microtype}
+\usepackage{xcolor}
+\usepackage{hyperref}
+\usepackage{enumitem}
+\usepackage{tabularx}
+\usepackage{titlesec}
+\usepackage{fontawesome5}
+
+% Curated elegant executive palette
+\definecolor{primary}{RGB}{15, 23, 42}       % Deep slate navy
+\definecolor{secondary}{RGB}{71, 85, 105}    % Slate gray
+\definecolor{accent}{RGB}{2, 132, 199}       % Refined blue
+\definecolor{rulecolor}{RGB}{203, 213, 225}  % Light border gray
+\definecolor{iconcolor}{RGB}{30, 41, 59}
+
+% Hyperref setup
+\hypersetup{
+    colorlinks=true,
+    linkcolor=accent,
+    urlcolor=accent,
+    citecolor=accent,
+    pdftitle={Mohavia Sinon - Curriculum Vitae},
+    pdfauthor={Mohavia Sinon},
+    pdfsubject={IT Developer and Software Developer},
+    pdfkeywords={Python, Odoo, ERP, Financial Engineering, Artificial Intelligence, Machine Learning}
+}
+
+% Section title formatting
+\titleformat{\section}
+  {\large\bfseries\color{primary}}
+  {}{0em}
+  {}[\vspace{-0.35em}\color{rulecolor}\titlerule\vspace{0.35em}]
+
+\titlespacing*{\section}{0pt}{1.0em}{0.45em}
+
+% Paragraph and list justification settings
+\setlength{\parindent}{0pt}
+\setlength{\parskip}{0.4em}
+\setlist[itemize]{
+    leftmargin=1.25em,
+    itemsep=0.22em,
+    topsep=0.2em,
+    parsep=0em,
+    label={\small\color{secondary}\textbullet}
+}
+
+\pagestyle{empty}
+
+\begin{document}
+
+% -------------------------------------------------------------
+% Header
+% -------------------------------------------------------------
+\begin{center}
+    {\LARGE \textbf{\color{primary} MOHAVIA SINON}} \\[0.25em]
+    {\large \textbf{\color{secondary} IT Developer \quad\textbullet\quad Software Developer}} \\[0.5em]
+    
+    {\small \color{secondary}
+        {\color{iconcolor}\faMapMarker*} Johannesburg, South Africa \quad\textbullet\quad
+        {\color{iconcolor}\faEnvelope}\ \href{mailto:mohaviaro@live.com}{mohaviaro@live.com} \quad\textbullet\quad
+        {\color{iconcolor}\faPhone*}\ +27 734339911
+    } \\[0.3em]
+    {\small
+        {\color{iconcolor}\faLinkedin}\ \href{https://www.linkedin.com/in/sinon/}{linkedin.com/in/sinon} \quad\textbullet\quad
+        {\color{iconcolor}\faGithub}\ \href{https://github.com/mohaviaro}{github.com/mohaviaro} \quad\textbullet\quad
+        {\color{iconcolor}\faGlobe}\ \href{https://mohaviaro.github.io/cv/}{mohaviaro.github.io/cv}
+    }
+\end{center}
+
+\vspace{0.1em}
+
+% -------------------------------------------------------------
+% Summary
+% -------------------------------------------------------------
+\section*{SUMMARY}
+Experienced Software Developer and AI Specialist with over 5 years of experience in Python development and ERP system implementation, specialising in building scalable, data-driven solutions. Proven track record of leading high-impact projects, optimising business processes, and delivering robust systems in complex environments.
+
+Holds a Master's degree in Artificial Intelligence and a Master's in Financial Engineering, supported by a strong academic foundation in Computer Science and Applied Mathematics. Demonstrates solid expertise in machine learning, optimisation, data analysis, and quantitative modelling.
+
+Combines strong analytical and engineering skills to develop advanced AI-driven solutions across business and technical domains. Passionate about innovation, continuous learning, and leveraging technology to solve complex real-world problems, with a collaborative approach to work across cross-functional teams.
+
+% -------------------------------------------------------------
+% Core Competencies
+% -------------------------------------------------------------
+\section*{CORE COMPETENCIES}
+\begin{tabularx}{\textwidth}{@{} X X @{}}
+\textbullet\ Advanced Python Development & \textbullet\ ERP System Development (Odoo) \\
+\textbullet\ Machine Learning \& Deep Learning & \textbullet\ Cloud Technologies (Azure, Docker) \\
+\textbullet\ AI Solution Implementation & \textbullet\ Financial Modelling \& Portfolio Optimisation \\
+\textbullet\ Data Analysis \& Visualisation & \textbullet\ Drug Design Using Deep Learning \\
+\end{tabularx}
+
+% -------------------------------------------------------------
+% Experience
+% -------------------------------------------------------------
+\section*{EXPERIENCE}
+
+\textbf{\color{primary} IT Developer} \hfill \textbf{\color{secondary} July 2022 -- Present} \\
+\textit{Health and Welfare Sector Education and Training Authority (HWSETA)} \hfill \textit{Johannesburg, South Africa}
+\begin{itemize}
+    \item Lead Python programming initiatives for front-end and back-end development, creating innovative ERP solutions that address dynamic business needs.
+    \item Implement robust version control and deployment processes using Docker and Microsoft Azure, improving operational efficiency.
+    \item Conduct comprehensive code reviews and system optimisations, enhancing overall software performance and scalability.
+    \item Spearhead data migration projects using PSQL, Python, XML-RPC, and ORM API, ensuring 100\% data integrity.
+    \item Collaborate with cross-functional teams to streamline server administration on Linux platforms, significantly improving system reliability.
+    \item Develop custom Odoo modules for strategic projects, including Organisation Management, Organisation Representatives, Skills Development Facilitators, Helpdesk Systems, Workplace Skills Plans, Finance, Learner Management Systems, and Supply Chain Management.
+\end{itemize}
+
+\vspace{0.35em}
+
+\textbf{\color{primary} Developer and Data Analyst Intern} \hfill \textbf{\color{secondary} July 2021 -- July 2022} \\
+\textit{Health and Welfare Sector Education and Training Authority (HWSETA)} \hfill \textit{Johannesburg, South Africa}
+\begin{itemize}
+    \item Developed and implemented new systems within Odoo ERP and CRM platforms, streamlining HR processes and enhancing data management.
+    \item Created reusable validation modules for all system components, reducing data entry errors.
+    \item Conducted in-depth data analysis to derive actionable insights, supporting key organisational decision-making processes.
+\end{itemize}
+
+\pagebreak
+
+% -------------------------------------------------------------
+% Education
+% -------------------------------------------------------------
+\section*{EDUCATION}
+
+\textbf{\color{primary} Master of Artificial Intelligence} \hfill \textbf{\color{secondary} January 2024 -- December 2025} \\
+\textit{University of Johannesburg} \hfill \textit{Master's Degree} \\
+{\small \textit{Minor Dissertation: Deep learning-based molecular generation for lung cancer therapeutics.}}
+
+\vspace{0.35em}
+
+\textbf{\color{primary} Master of Financial Engineering} \hfill \textbf{\color{secondary} January 2021 -- December 2023} \\
+\textit{University of Johannesburg} \hfill \textit{Master's Degree} \\
+{\small \textit{Minor Dissertation: The analysis of diversification properties of stablecoins through the Shannon entropy measure.}}
+
+\vspace{0.35em}
+
+\textbf{\color{primary} Bachelor of Science Honours in Applied Mathematics} \hfill \textbf{\color{secondary} January 2019 -- December 2019} \\
+\textit{University of Johannesburg} \hfill \textit{Bachelor Honour's Degree}
+
+\vspace{0.35em}
+
+\textbf{\color{primary} BSc in Applied Mathematics and Computer Science} \hfill \textbf{\color{secondary} January 2016 -- December 2018} \\
+\textit{University of Johannesburg} \hfill \textit{Bachelor Degree}
+
+% -------------------------------------------------------------
+% Technical Skills
+% -------------------------------------------------------------
+\section*{TECHNICAL SKILLS}
+\begin{tabularx}{\textwidth}{@{} >{\bfseries\color{primary}}p{4.6cm} X @{}}
+Programming Languages & Python (Advanced), R, Java, C++, JavaScript, Visual Basic, Assembly \\
+ERP Systems & Odoo (versions 8, 12, 14, 15, 16, 17, 18) \\
+Databases & PostgreSQL, SQL \\
+DevOps \& Version Control & Git, Docker, Azure, Bitbucket, Github \\
+Data Science \& ML & Pandas, NumPy, Scikit-Learn, TensorFlow, SVM, KNN, CNN, GAN \\
+Web Technologies & HTML, XML, RESTful APIs \\
+Other Tools & Linux, LaTeX, Microsoft Office Suite, Mathematica, Eviews, Stata \\
+\end{tabularx}
+
+% -------------------------------------------------------------
+% Certifications
+% -------------------------------------------------------------
+\section*{CERTIFICATIONS}
+\begin{tabularx}{\textwidth}{@{} X X @{}}
+\textbf{Fundamentals of Deep Learning} \hfill \textit{Sep 2024} & \textbf{Intermediate Machine Learning} \hfill \textit{Aug 2024} \\
+{\small NVIDIA} & {\small Kaggle} \\[0.3em]
+\textbf{Data Visualisation} \hfill \textit{Jul 2024} & \textbf{Intro to Machine Learning} \hfill \textit{Jul 2024} \\
+{\small Kaggle} & {\small Kaggle} \\[0.3em]
+\textbf{Git Complete: The Definitive Guide} \hfill \textit{Jan 2024} & \textbf{Artificial Intelligence in the 4IR} \hfill \textit{Apr 2020} \\
+{\small Udemy} & {\small University of Johannesburg} \\
+\end{tabularx}
+
+% -------------------------------------------------------------
+% Publications & Research
+% -------------------------------------------------------------
+\section*{PUBLICATIONS \& RESEARCH}
+\textbf{Deep Learning-Based Molecular Generation for Lung Cancer Therapeutics} \\
+Mohavia Ben Amid Sinon, Uche A. K. Chude-Okonkwo \\
+\textit{Drugs and Drug Candidates}, MDPI, Vol. 5, Issue 3, Article 48, 2026. \\
+DOI: \href{https://doi.org/10.3390/ddc5030048}{https://doi.org/10.3390/ddc5030048}
+
+\vspace{0.4em}
+
+\textbf{The Analysis of Diversification Properties of Stablecoins Through the Shannon Entropy Measure} \\
+Mohavia Ben Amid Sinon, Jules Clement Mba \\
+\textit{Knowledge and Information Systems}, Springer, Vol. 66, Issue 9, pp. 5501--5540, 2024. \\
+DOI: \href{https://doi.org/10.1007/s10115-024-02133-3}{https://doi.org/10.1007/s10115-024-02133-3}
+
+% -------------------------------------------------------------
+% Languages & References
+% -------------------------------------------------------------
+\section*{LANGUAGES \& REFERENCES}
+\begin{tabularx}{\textwidth}{@{} >{\bfseries\color{primary}}p{4.6cm} X @{}}
+Languages & French (Native), English (Professional Working Proficiency) \\
+References & Available on request. \\
+\end{tabularx}
+
+\end{document}

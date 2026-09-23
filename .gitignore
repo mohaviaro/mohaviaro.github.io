@@ -1,0 +1,12 @@
+# LaTeX temporary files
+*.aux
+*.log
+*.out
+*.fls
+*.fdb_latexmk
+*.synctex.gz
+
+# Local backups
+Mohavia-Sinon-cv-original.pdf
+test-*.html
+test-*.pdf
