@@ -10,34 +10,54 @@ Built with semantic HTML5, pure CSS, and minimal vanilla JavaScript. Fast, light
 
 ## 📄 Contents & Features
 
-- **Directly Grounded in Official CV**: Mirrors your uploaded `Mohavia Sinon-cv.pdf` with exact roles, competencies, timeline, education, and technical stack.
-- **Direct PDF Download**: Integrated download button serving your official `Mohavia Sinon-cv.pdf`.
-- **Minimal, Professional Aesthetic**: Clean typography, calm palette, responsive layout, and understated light/dark mode without artificial effects.
+- **Single Source of Truth (`index.html`)**: The CV PDF is directly generated from the webpage using headless Chrome and modern print styling, ensuring 100% parity between the site and downloaded resume.
+- **Dual CV Export Options**:
+  - **Download CV (PDF)**: Directly downloads `Mohavia Sinon-cv.pdf` generated from `index.html`.
+  - **Print / Save as PDF**: Opens the browser's native print dialog (`window.print()`) styled cleanly for A4 export.
+- **Automated Regeneration**: Run `npm run build:pdf` locally, or let GitHub Actions automatically recompile `Mohavia Sinon-cv.pdf` from `index.html` on every push.
+- **Minimal, Professional Aesthetic**: Clean Inter typography, responsive layout, and understated light/dark mode.
 - **Peer-Reviewed Publications**: MDPI (2026) and Springer (2024) research papers with direct DOI links.
 - **Social & Contact Links**: Direct connections to LinkedIn, GitHub, email, and phone.
-- **Zero Build Step**: Pure static HTML/CSS/JS ready to deploy to GitHub Pages via the included GitHub Actions workflow (`.github/workflows/deploy.yml`).
 
 ---
 
 ## 📁 Project Structure
 
 ```
-cv/
-├── index.html                   # Main CV webpage
-├── Mohavia Sinon-cv.pdf         # Official downloadable PDF resume
+.
+├── index.html                   # Source of truth CV webpage
+├── Mohavia Sinon-cv.pdf         # Generated 2-page A4 PDF resume (built from index.html)
+├── package.json                 # Scripts for PDF compilation (npm run build:pdf)
+├── scripts/
+│   └── generate-pdf.sh          # Headless Chrome PDF generation script
 ├── assets/
 │   ├── css/
 │   │   ├── variables.css        # Theme variables & typography tokens
 │   │   ├── base.css             # Base reset & typography
 │   │   ├── components.css       # Clean layout components & entries
-│   │   └── print.css            # Print stylesheet
+│   │   └── print.css            # Refined 2-page A4 print & PDF stylesheet
 │   └── js/
-│       └── app.js               # Minimal theme toggle & copy helper
+│       └── app.js               # Theme toggle, copy email & print handlers
 ├── .github/
 │   └── workflows/
-│       └── deploy.yml           # Automated GitHub Pages CI/CD workflow
+│       ├── deploy.yml           # Automated GitHub Pages CI/CD with PDF generator
+│       └── static.yml           # Static Pages deployment with PDF generator
 └── README.md                    # Documentation
 ```
+
+---
+
+## 🛠️ Generating the PDF Locally
+
+To regenerate `Mohavia Sinon-cv.pdf` directly from `index.html`:
+
+```bash
+npm run build:pdf
+# or:
+bash scripts/generate-pdf.sh
+```
+
+This runs headless Google Chrome or Chromium to render `index.html` to a 2-page A4 PDF using the print stylesheet.
 
 ---
 

@@ -1,0 +1,11 @@
+{
+  "name": "mohavia-portfolio",
+  "version": "1.0.0",
+  "description": "Mohavia Sinon - Personal CV & Portfolio Website",
+  "scripts": {
+    "build:pdf": "bash scripts/generate-pdf.sh",
+    "generate-pdf": "bash scripts/generate-pdf.sh"
+  },
+  "author": "Mohavia Sinon <mohaviaro@live.com>",
+  "license": "MIT"
+}

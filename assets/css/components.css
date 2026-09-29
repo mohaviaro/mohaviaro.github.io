@@ -45,6 +45,24 @@
   text-decoration: none;
 }
 
+.nav-btn-link {
+  background: transparent;
+  border: none;
+  font-family: inherit;
+  font-size: 0.875rem;
+  color: var(--text-muted);
+  cursor: pointer;
+  padding: 0;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.35rem;
+  transition: color var(--transition);
+}
+
+.nav-btn-link:hover {
+  color: var(--text-main);
+}
+
 .theme-toggle-btn {
   background: transparent;
   border: 1px solid var(--border);

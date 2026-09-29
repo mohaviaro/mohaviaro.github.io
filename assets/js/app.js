@@ -5,6 +5,7 @@
 document.addEventListener('DOMContentLoaded', () => {
   initTheme();
   initCopyEmail();
+  initPrintCv();
 });
 
 function initTheme() {
@@ -90,4 +91,14 @@ function showToast(message) {
   setTimeout(() => {
     toast.classList.remove('show');
   }, 2500);
+}
+
+function initPrintCv() {
+  const printTriggers = document.querySelectorAll('#print-cv-btn, #nav-print-btn, #footer-print-link');
+  printTriggers.forEach(btn => {
+    btn.addEventListener('click', (e) => {
+      e.preventDefault();
+      window.print();
+    });
+  });
 }
